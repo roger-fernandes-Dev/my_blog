@@ -31,3 +31,7 @@ Thumbs.db
 
 # Outros
 *.log
+
+# SSH keys
+github_key
+github_key.pub
