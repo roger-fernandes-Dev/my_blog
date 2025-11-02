@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 import AnimateWrapper from "./AnimateWrapper";
-import Image from "next/image";
+import AsideLeft from "@/components/AsideLeft";
+import AsideRight from "@/components/AsideRight";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,43 +25,12 @@ export default function RootLayout({
       <body
         className={`${ibmPlexMono.className} antialiased flex mx-auto h-screen overflow-hidden text-gray-900`}
       >
-        <aside className="w-1/3 p-4 sticky top-0 h-screen overflow-y-auto flex flex-col items-center">
-          <p className="text-2xl font-bold">Explorer</p>
-          <ul className="w-full flex flex-col items-center space-y-4 mt-4">
-            <Link href="/" className="w-10/12 h-10 flex justify-center items-center bg-gray-200 border-2 border-gray-300 hover:bg-gray-400 transition-all duration-100 ease-in-out cursor-pointer">
-            <li className="">
-              Home
-            </li>
-            </Link>
-            <Link href="/projects" className="w-10/12 h-10 flex justify-center items-center bg-gray-200 border-2 border-gray-300 hover:bg-gray-400 transition-all duration-100 ease-in-out cursor-pointer">
-            <li className="">
-              projects
-            </li>
-            </Link>
-            <Link href="/curriculum" className="w-10/12 h-10 flex justify-center items-center bg-gray-200 border-2 border-gray-300 hover:bg-gray-400 transition-all duration-100 ease-in-out cursor-pointer">
-            <li className="">
-              curriculum
-            </li>
-            </Link>
-          </ul>
-        </aside>
-        <main className="flex-1 min-w-7/12 overflow-y-auto p-6">
+        <AsideLeft />
+        <main className="flex-1 min-w-7/12 overflow-y-auto p-6 bg-gray-800 text-white">
          <div className="absolute inset-0 bg-[url('/home-transparent.png')] bg-repeat opacity-9 pointer-events-none -z-10"></div>
           <AnimateWrapper>{children}</AnimateWrapper>
         </main>
-        <aside className="w-1/3 p-4 sticky top-0 h-screen overflow-y-auto flex flex-col items-center">
-          <p>Profile</p>
-          <figure>
-            <Image src="/facewow.jpg" alt="Profile Picture" width={150} height={150} className="rounded-full mb-4 bg-white">
-
-            </Image>
-          </figure>
-          <ul>  
-            <li>
-              <Link href="/profile">My Profile</Link>
-            </li>
-          </ul>
-        </aside>
+        <AsideRight />
         
       </body>
     </html>
