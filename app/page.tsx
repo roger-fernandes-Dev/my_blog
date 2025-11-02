@@ -1,11 +1,12 @@
 'use client'
 
+import RotatingCube from "@/components/RotatingCube";
+
 export default function Home() {
   return (
         <main className="">
           <h1 className="text-4xl font-bold">Welcome to My Blog!</h1>
-            <p>
-What is Lorem Ipsum?
+              <div className="flex mt-5 p-3 whitespace-break-spaces"><RotatingCube /> What is Lorem Ipsum?
 
 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
@@ -62,7 +63,7 @@ In et dui varius, sollicitudin felis sit amet, consequat ex. Mauris tristique le
 
 Donec nec accumsan est. Pellentesque sem purus, maximus id blandit pretium, lacinia nec justo. Mauris ut tempus massa. Proin mattis molestie vestibulum. Vestibulum blandit, sapien sed blandit commodo, tortor tortor venenatis sapien, eget volutpat lacus neque a libero. Pellentesque eu feugiat ex. Pellentesque vitae interdum tortor. Donec mollis odio eu lacus sagittis suscipit. Nullam quis aliquam leo. Etiam vel tellus sit amet purus ullamcorper posuere. Ut finibus sapien quis justo blandit sagittis. Suspendisse malesuada sapien leo, sit amet facilisis leo vulputate sit amet. Vestibulum maximus mauris sit amet porta euismod.
 Generated 25 paragraphs, 2104 words, 14152 bytes of Lorem Ipsum
-    </p>
+</div>    
   </main>
   );
 }

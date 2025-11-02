@@ -9,15 +9,18 @@ export default function AsideRight(){
             </Image>
           </figure>
           <table>
-            <tr>
-                <td className="font-bold pr-2">Name:</td>
-                <td>Roger Fernandes</td>
-            </tr>
-
-            <tr>
-                <td className="font-bold pr-2">Age:</td>
-                <td>33 years old</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td className="font-bold pr-2">Name:</td>
+                    <td>Roger Fernandes</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td className="font-bold pr-2">Age:</td>
+                    <td>33 years old</td>
+                </tr>
+            </tbody>
           </table>
         </aside>
     )
