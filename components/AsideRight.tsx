@@ -8,17 +8,17 @@ export default function AsideRight(){
 
             </Image>
           </figure>
-          <table>
-            <tbody>
-                <tr>
-                    <td className="font-bold pr-2">Name:</td>
-                    <td>Roger Fernandes</td>
+          <table className="w-10/12 border-2 p-6 border-gray-300 space-y-8">
+            <tbody className="w-full">
+                <tr className="w-full">
+                    <td className="text-center font-bold pr-2">Name:</td>
+                    <td className="text-center pr-2">Roger Fernandes</td>
                 </tr>
             </tbody>
-            <tbody>
+            <tbody className="w-full">
                 <tr>
-                    <td className="font-bold pr-2">Age:</td>
-                    <td>33 years old</td>
+                    <td className="text-center font-bold pr-2">Age:</td>
+                    <td className="text-center pr-2">33 years old</td>
                 </tr>
             </tbody>
           </table>

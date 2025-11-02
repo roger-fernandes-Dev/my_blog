@@ -5,8 +5,11 @@ import RotatingCube from "@/components/RotatingCube";
 export default function Home() {
   return (
         <main className="">
-          <h1 className="text-4xl font-bold">Welcome to My Blog!</h1>
-              <div className="flex mt-5 p-3 whitespace-break-spaces"><RotatingCube /> What is Lorem Ipsum?
+          <div className="w-full flex justify-center items-center mt-20 space-x-10">
+            <h1 className="text-4xl font-bold">Welcome to My Blog!</h1>
+            <RotatingCube />
+          </div>
+              <div className="flex m-28 whitespace-break-spaces">What is Lorem Ipsum?
 
 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
